@@ -18,6 +18,8 @@ sudo apt-get install atom -y
 echo "installing git"
 sudo apt-get update
 apt-get install git-core
+git config --global user.name "loopiellcdev"
+git config --global user.email "loopiellcdev@gmail.com"
 
 echo "installing google chrome"
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
