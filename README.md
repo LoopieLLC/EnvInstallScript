@@ -11,10 +11,13 @@ The software being install is:
 7) MySQL server and workbench
 8) Git
 
-The first thing that you are going to do is run the command:
+When you log onto your virtual machine it is going to ask you if you want to update.  Say no I do not want to update.  Then run the command:
+
 sudo dpkg --configure -a
 
-This will fix any broken packages.
+This will fix broken packages.
+
+If you have any errors that show up just let me know.  There are some update issues with this distrubution and I can help you to fix them.
 
 To run this script you will need to create an empty file and copy and paste the scipt text into it.  Next you need to create a directory in you "home" folder called bin.  So the path should be /home/osboxes/bin (your username is osboxes on the virtual machine, and if you created a different user then change osboxes to your username).  
 
