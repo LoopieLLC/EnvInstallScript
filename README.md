@@ -17,7 +17,7 @@ sudo dpkg --configure -a
 
 This will fix broken packages.
 
-If you have any errors that show up just let me know.  There are some update issues with this distrubution and I can help you to fix them.
+If you have any errors that show up just let me know.  You might have some pending updates in your cache that are locking the 'apt-get' command.  This is an easy fix that involves a simple udate.
 
 To run this script you will need to create an empty file and copy and paste the scipt text into it.  Next you need to create a directory in you "home" folder called bin.  So the path should be /home/osboxes/bin (your username is osboxes on the virtual machine, and if you created a different user then change osboxes to your username).  
 
