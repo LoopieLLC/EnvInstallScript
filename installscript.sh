@@ -25,9 +25,9 @@ echo
 echo "***installing git***"
 echo
 sudo apt-get update
-apt-get install git-core
-git config --global user.name "loopiellcdev"
-git config --global user.email "loopiellcdev@gmail.com"
+sudo apt-get install git-core
+sudo git config --global user.name "loopiellcdev"
+sudo git config --global user.email "loopiellcdev@gmail.com"
 
 echo
 echo "***installing google chrome***"
@@ -65,18 +65,18 @@ cd /tmp
 cat /tmp/rvm.sh | bash -s stable --rails
 curl -sSL https://get.rvm.io -o rvm.sh
 source /home/osboxes/.rvm/scripts/rvm
-rvm install ruby -y
-rvm --default use ruby-2.5.1 -y
+sudo rvm install ruby -y
+sudo rvm --default use ruby-2.5.1 -y
 gem -v
-gem install rails -v 4.2.7
-gem update --system
+sudo gem install rails -v 4.2.7
+sudo gem update --system
 
 echo
 echo "***installing mysql***"
 echo
 sudo apt-get update
 sudo apt-get install mysql-server
-mysql_secure_installation
+sudo mysql_secure_installation
 mysqld --initialize
 
 echo
