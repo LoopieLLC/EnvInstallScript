@@ -1,46 +1,62 @@
 #!/usr/bin/env bash
 
 # refreshing the repositories
-echo "upgrading and updating packages"
+echo
+echo "***upgrading and updating packages***"
+echo
 sudo apt-get update && sudo apt-get upgrade -y
 
-echo "installing Python2.7 and Python3.5 and pip for both"
+echo
+echo "***installing Python2.7 and Python3.5 and pip for both***"
+echo
 # installing python 2.7 and pip for it
 sudo apt-get install python2.7 python-pip -y
 # installing python-pip for 3.6
 sudo apt-get install python3-pip -y
 
-echo "installing atom text editor"
+echo
+echo "***installing atom text editor***"
+echo
 sudo add-apt-repository ppa:webupd8team/atom
 sudo apt-get update
 sudo apt-get install atom -y
 
-echo "installing git"
+echo
+echo "***installing git***"
+echo
 sudo apt-get update
 apt-get install git-core
 git config --global user.name "loopiellcdev"
 git config --global user.email "loopiellcdev@gmail.com"
 
-echo "installing google chrome"
+echo
+echo "***installing google chrome***"
+echo
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 sudo apt-get update
 sudo apt-get install google-chrome-stable -y
 
-echo "installing java"
+echo
+echo "***installing java***"
+echo
 sudo apt-get update
 sudo apt-get install default-jre -y
 sudo apt-get install default-jdk -y
 javac -version
 
-echo "installing npm and nodejs"
+echo
+echo "***installing npm and nodejs***"
+echo
 sudo apt-get update
 sudo apt-get install nodejs -y
 sudo apt-get install npm -y
 npm -v
 nodejs -v
 
-echo "install ruby on rails"
+echo
+echo "***install ruby on rails***"
+echo
 sudo apt-get update
 sudo apt-get update -y
 sudo apt-get install curl -y
@@ -55,20 +71,17 @@ gem -v
 gem install rails -v 4.2.7
 gem update --system
 
-echo "updating packages"
+echo
+echo "***installing mysql***"
+echo
 sudo apt-get update
-
-echo "updating packages"
-sudo apt-get update
-
-echo "installing mysql"
 sudo apt-get install mysql-server
 mysql_secure_installation
 mysqld --initialize
 
-echo "updating packages"
+echo
+echo "***installing MySQL workbench***"
+echo
 sudo apt-get update
-
-echo "installing MySQL workbench"
 sudo apt install mysql-workbench -y
 
