@@ -15,6 +15,10 @@ sudo add-apt-repository ppa:webupd8team/atom
 sudo apt-get update
 sudo apt-get install atom -y
 
+echo "installing git"
+sudo apt-get update
+apt-get install git-core
+
 echo "installing google chrome"
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
 echo 'deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
@@ -58,6 +62,7 @@ sudo apt-get update
 echo "installing mysql"
 sudo apt-get install mysql-server
 mysql_secure_installation
+mysqld --initialize
 
 echo "updating packages"
 sudo apt-get update
