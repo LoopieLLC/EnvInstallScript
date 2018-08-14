@@ -15,6 +15,8 @@ When you log onto your virtual machine it is going to ask you if you want to upd
 
 sudo dpkg --configure -a
 
+You are going to have to use the 'sudo' keyword.  This keyword give a user root priviledges.  You will be prompted with a password.  The password is your login password: osboxes.org
+
 This will fix broken packages.
 
 If you have any errors that show up just let me know.  You might have some pending updates in your cache that are locking the 'apt-get' command.  This is an easy fix that involves a simple udate.
@@ -29,7 +31,7 @@ Once you have done that you can open a terminal in this location (/home/osboxes/
 
 where filename is the name of the file you just saved i.e. installscript.sh.  You may get a permissions error meaning that you do not have permission to execute that file.  If this happens just run the command:
 
-chmod +x filename
+sudo chmod +x filename
 
 where the filename is the name of the file.  This will allow you to execute the file.  You are going to be prompted by some of the installations.  For the MySQL installation you are going to be asked to create a root password.  Make it simple and write it down because that is how you will access MySQL. 
 
