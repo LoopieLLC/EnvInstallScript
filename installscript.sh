@@ -64,8 +64,8 @@ cd /tmp
 curl -sSL https://get.rvm.io -o rvm.sh
 cat /tmp/rvm.sh | bash -s stable --rails
 source /home/osboxes/.rvm/scripts/rvm
-rvm install ruby -y
-rvm --default use ruby-2.5.1 -y
+rvm install ruby
+rvm --default use ruby-2.5.1
 gem install rails -v 4.2.7
 gem update --system
 
