@@ -11,16 +11,6 @@ The software being install is:
 7) MySQL server and workbench
 8) Git
 
-When you log onto your virtual machine it is going to ask you if you want to update.  Say no I do not want to update.  Then run the command:
-
-sudo dpkg --configure -a
-
-You are going to have to use the 'sudo' keyword.  This keyword give a user root priviledges.  You will be prompted with a password.  The password is your login password: osboxes.org
-
-This will fix broken packages.
-
-If you have any errors that show up just let me know.  You might have some pending updates in your cache that are locking the 'apt-get' command.  This is an easy fix that involves a simple udate.
-
 To run this script you will need to create an empty file and copy and paste the scipt text into it.  Next you need to create a directory in you "home" folder called bin.  So the path should be /home/osboxes/bin (your username is osboxes on the virtual machine, and if you created a different user then change osboxes to your username).  
 
 Save the file and call it installscript.sh (this is a shell script that we will run via the terminal).
