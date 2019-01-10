@@ -11,11 +11,11 @@ The software being install is:
 7) MySQL server and workbench
 8) Git
 
-To run this script you will need to create an empty file and copy and paste the scipt text into it.  Next you need to create a directory in you "home" folder called bin.  So the path should be /home/<username>/bin (your username can be viewed in your home folder path).  
+To run this script you will need to create an empty file and copy and paste the scipt text into it.  Next you need to create a directory in you "home" folder called bin.  So the path should be /home/[username]/bin (your username can be viewed in your home folder path).  
 
 Save the file and call it installscript.sh (this is a shell script that we will run via the terminal).
 
-Once you have done that you can open a terminal in this location (/home/<username>/bin) and execute the command:
+Once you have done that you can open a terminal in this location (/home/[username]/bin) and execute the command:
 
 ./filename
 
