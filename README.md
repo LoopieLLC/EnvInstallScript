@@ -2,7 +2,7 @@
 A bash script for installing the necessary software for our development project.
 
 The software being install is:
-1) Python2.7 and 3.5 and pip for both
+1) Python2.7 and 3.6 and pip for both
 2) Atom text editor
 3) Google chrome
 4) Java8 sdk, jre, and jdk
