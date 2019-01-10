@@ -61,7 +61,7 @@ gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB8
 cd /tmp
 curl -sSL https://get.rvm.io -o rvm.sh
 cat /tmp/rvm.sh | bash -s stable --rails
-source /home/osboxes/.rvm/scripts/rvm
+source /home/<the name of your computer>/.rvm/scripts/rvm
 rvm install ruby
 rvm --default use ruby-2.6.0
 gem install rails -v 5.2.2
