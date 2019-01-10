@@ -26,8 +26,6 @@ echo "***installing git***"
 echo
 sudo apt-get update
 sudo apt-get install git-core
-sudo git config --global user.name "loopiellcdev"
-sudo git config --global user.email "loopiellcdev@gmail.com"
 
 echo
 echo "***installing google chrome***"
@@ -65,8 +63,8 @@ curl -sSL https://get.rvm.io -o rvm.sh
 cat /tmp/rvm.sh | bash -s stable --rails
 source /home/osboxes/.rvm/scripts/rvm
 rvm install ruby
-rvm --default use ruby-2.5.1
-gem install rails -v 4.2.7
+rvm --default use ruby-2.6.0
+gem install rails -v 5.2.2
 gem update --system
 
 echo
