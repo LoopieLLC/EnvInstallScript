@@ -11,7 +11,7 @@ The software being install is:
 7) MySQL server and workbench
 8) Git
 
-To run this script you will need to create an empty file and copy and paste the scipt text into it.  Next you need to create a directory in you "home" folder called bin.  So the path should be /home/osboxes/bin (your username is osboxes on the virtual machine, and if you created a different user then change osboxes to your username).  
+To run this script you will need to create an empty file and copy and paste the scipt text into it.  Next you need to create a directory in you "home" folder called bin.  So the path should be /home/<username>/bin (your username can be viewed in your home folder path).  
 
 Save the file and call it installscript.sh (this is a shell script that we will run via the terminal).
 
